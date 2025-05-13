@@ -1,0 +1,21 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 本文组织结构图}}{7}{figure.caption.4}%
+\addvspace {10\p@ }
+\vspace {-10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 少样本分类测试任务示意图}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 无监督对比学习与有监督对比学习}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces CBOW模型与Skip-Gram模型示意图}}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces BERT的整体预训练和微调过程}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces CLIP模型预训练示意图}}{13}{figure.caption.9}%
+\addvspace {10\p@ }
+\vspace {-10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 样本关系示意图}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 多粒度样本关系对比学习模型示意图}}{18}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces MGSRCL模型推理过程示意图}}{22}{figure.caption.14}%
+\addvspace {10\p@ }
+\vspace {-10pt}
+\addvspace {10\p@ }
+\vspace {-10pt}
+\addvspace {10\p@ }
+\contentsfinish 
