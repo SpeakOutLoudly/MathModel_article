@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.13)  13 MAY 2025 18:00
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.13)  14 MAY 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2055,6 +2055,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 5.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 20.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2074,13 +2090,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 16.
+(hyperref)                removing `\@ifnextchar' on input line 24.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 18.
-
-
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2090,73 +2102,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[3]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[4]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 48.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 56.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[5]
-File: figures/组织结构.pdf Graphic file (type pdf)
-<use figures/组织结构.pdf>
-Package hyperref Info: bookmark level for unknown figuresEN defaults to 0 on in
-put line 80.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 84.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[6])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[7]
 \openout2 = `contents/related_work.aux'.
 
  (./contents/related_work.tex
@@ -2171,6 +2116,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 File: figures/RelatedWork/少样本分类测试任务.pdf Graphic file (type pdf)
 <use figures/RelatedWork/少样本分类测试任务.pdf>
+Package hyperref Info: bookmark level for unknown figuresEN defaults to 0 on in
+put line 16.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 20.
@@ -2184,7 +2131,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[8
+[3
 
 
 
@@ -2214,7 +2161,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[9]
+[4]
 File: figures/RelatedWork/对比学习.pdf Graphic file (type pdf)
 <use figures/RelatedWork/对比学习.pdf>
 
@@ -2235,7 +2182,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[10]
+[5]
 File: figures/RelatedWork/Word2Vec.pdf Graphic file (type pdf)
 <use figures/RelatedWork/Word2Vec.pdf>
 
@@ -2252,7 +2199,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[11]
+[6]
 File: figures/RelatedWork/BERT.pdf Graphic file (type pdf)
 <use figures/RelatedWork/BERT.pdf>
 
@@ -2269,7 +2216,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[12]
+[7]
 File: figures/RelatedWork/CLIP.pdf Graphic file (type pdf)
 <use figures/RelatedWork/CLIP.pdf>
 
@@ -2286,7 +2233,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[13]
+[8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 107.
@@ -2306,7 +2253,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[14]
+[9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 155.
@@ -2324,7 +2271,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[15]
+[10]
 \openout2 = `contents/MGSRCL.aux'.
 
  (./contents/MGSRCL.tex
@@ -2360,7 +2307,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[16
+[11
 
 
 
@@ -2389,7 +2336,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[17]
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 57.
@@ -2403,7 +2350,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[18]
+[13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 83.
@@ -2417,7 +2364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[19]
+[14]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2426,7 +2373,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[20]
+[15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 117.
@@ -2457,7 +2404,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[21]
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2469,7 +2416,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[22]
+[17]
 \openout2 = `contents/SVMSMA.aux'.
 
  (./contents/SVMSMA.tex
@@ -2503,7 +2450,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[23
+[18
 
 
 
@@ -2531,7 +2478,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[24
+[19
 
 
 
@@ -2551,7 +2498,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[25] (./main.bbl
+[20] (./main.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2560,7 +2507,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[26
+[21
 
 
 
@@ -2568,16 +2515,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[27]
+])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2586,16 +2524,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[28])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.64723pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.64723pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
-
-[29]
+[22]
 \openout2 = `contents/appendix.aux'.
 
  (./contents/appendix.tex
@@ -2618,7 +2547,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[30
+[23
 
 
 
@@ -2634,7 +2563,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[31]
+[24]
 \tf@thm=\write9
 \openout9 = `main.thm'.
 
@@ -2656,15 +2585,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9285B32401C981CD81BE76D8E084BC09;6545.
+(rerunfilecheck)             Checksum: E5E0595BF75B4357635FA04583521DD6;6579.
  ) 
 Here is how much of TeX's memory you used:
- 43960 strings out of 473832
- 961420 string characters out of 5730404
- 1341579 words of memory out of 5000000
- 66136 multiletter control sequences out of 15000+600000
- 573644 words of font info for 160 fonts, out of 8000000 for 9000
+ 43832 strings out of 473832
+ 956971 string characters out of 5730404
+ 1335761 words of memory out of 5000000
+ 66004 multiletter control sequences out of 15000+600000
+ 575806 words of font info for 167 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 107i,17n,131p,1563b,1284s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,17n,131p,1563b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (37 pages, 708480 bytes).
+Output written on main.xdv (30 pages, 538936 bytes).

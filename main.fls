@@ -570,9 +570,9 @@ OUTPUT contents/introduction.aux
 INPUT ./contents/introduction.tex
 INPUT ./contents/introduction.tex
 INPUT contents/introduction.tex
-INPUT ./figures/组织结构.pdf
-INPUT ./figures/组织结构.pdf
-INPUT ./figures/组织结构.pdf
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./contents/related_work.tex
 INPUT ./contents/related_work.tex
 OUTPUT contents/related_work.aux
@@ -600,6 +600,9 @@ INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
@@ -652,6 +655,7 @@ INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT d:/Latex/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
