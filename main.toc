@@ -1,31 +1,34 @@
 \contentsline {chapter}{摘\hskip \ccwd {}\hskip \ccwd {}要}{I}{chapter*.1}%
-\contentsline {chapter}{图目录}{III}{section*.2}%
-\contentsline {chapter}{表目录}{IV}{section*.3}%
+\contentsline {chapter}{图目录}{IV}{section*.2}%
+\contentsline {chapter}{表目录}{V}{section*.3}%
 \contentsline {chapter}{\numberline {\raisebox {0.0mm}{1}}\hspace {0pt}绪论}{1}{chapter.1}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{1.1}}\hspace {-2pt}研究背景与意义}{1}{section.1.1}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{1.2}}\hspace {-2pt}问题提出与研究内容}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{1.2.1}}\hspace {-2pt}问题一}{1}{subsection.1.2.1}%
 \contentsline {chapter}{\numberline {\raisebox {0.0mm}{2}}\hspace {0pt}问题分析}{2}{chapter.2}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{2.1}}\hspace {-2pt}问题重述}{2}{section.2.1}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{2.2}}\hspace {-2pt}理论基础}{2}{section.2.2}%
-\contentsline {chapter}{\numberline {\raisebox {0.0mm}{3}}\hspace {0pt}模型建立与求解}{3}{chapter.3}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{3.1}}\hspace {-2pt}问题1：颜色空间转换模型}{3}{section.3.1}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{3.2}}\hspace {-2pt}问题2：四通道到五通道颜色转换模型}{3}{section.3.2}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{3.3}}\hspace {-2pt}问题3：LED显示器颜色校正模型}{3}{section.3.3}%
-\contentsline {chapter}{\numberline {\raisebox {0.0mm}{4}}\hspace {0pt}模型实现与结果分析}{4}{chapter.4}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{4.1}}\hspace {-2pt}数据集介绍}{4}{section.4.1}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{4.2}}\hspace {-2pt}实验设计}{4}{section.4.2}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{4.3}}\hspace {-2pt}结果与分析}{4}{section.4.3}%
-\contentsline {chapter}{\numberline {\raisebox {0.0mm}{5}}\hspace {0pt}模型评价}{5}{chapter.5}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{5.1}}\hspace {-2pt}数据集介绍}{5}{section.5.1}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{5.2}}\hspace {-2pt}实验设计}{5}{section.5.2}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{5.3}}\hspace {-2pt}结果与分析}{5}{section.5.3}%
-\contentsline {chapter}{\numberline {\raisebox {0.0mm}{6}}\hspace {0pt}结论与展望}{6}{chapter.6}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{6.1}}\hspace {-2pt}主要结论}{6}{section.6.1}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{6.2}}\hspace {-2pt}不足与改进方向}{6}{section.6.2}%
-\contentsline {chapter}{参考文献}{7}{section*.4}%
-\contentsline {chapter}{附\hskip \ccwd {}\hskip \ccwd {}录}{8}{appendix*.6}%
-\contentsline {section}{\numberline {A.}\hspace {-2pt}问题1使用代码}{8}{section.Alph0.1}%
-\contentsline {section}{\numberline {B.}\hspace {-2pt}问题2使用代码}{8}{section.Alph0.2}%
-\contentsline {section}{\numberline {C.}\hspace {-2pt}问题3使用代码}{8}{section.Alph0.3}%
-\contentsline {section}{\numberline {D.}\hspace {-2pt}像素数据集}{17}{section.Alph0.4}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.2}}\hspace {-2pt}模型假设}{2}{section.2.2}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.3}}\hspace {-2pt}符号定义}{2}{section.2.3}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.4}}\hspace {-2pt}理论基础}{2}{section.2.4}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{2.4.1}}\hspace {-2pt}CIE1931标准色度观察者与光谱三刺激值}{2}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{2.4.2}}\hspace {-2pt}CIEXYZ颜色空间}{2}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{2.4.3}}\hspace {-2pt}CIELab颜色空间}{2}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{2.4.4}}\hspace {-2pt}CIE1931xy色度图与色域表示}{3}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{2.4.5}}\hspace {-2pt}CIEDE2000色差公式}{3}{subsection.2.4.5}%
+\contentsline {chapter}{\numberline {\raisebox {0.0mm}{3}}\hspace {0pt}模型建立与求解}{5}{chapter.3}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{3.1}}\hspace {-2pt}问题1：颜色空间转换模型}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{3.1.1}}\hspace {-2pt}模型建立与求解}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{3.1.2}}\hspace {-2pt}问题一结果分析}{6}{subsection.3.1.2}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{3.2}}\hspace {-2pt}问题2：四通道到五通道颜色转换模型}{7}{section.3.2}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{3.3}}\hspace {-2pt}问题3：LED显示器颜色校正模型}{7}{section.3.3}%
+\contentsline {chapter}{\numberline {\raisebox {0.0mm}{4}}\hspace {0pt}模型评价与推广}{9}{chapter.4}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{4.1}}\hspace {-2pt}主要结论}{9}{section.4.1}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{4.2}}\hspace {-2pt}模型优点}{9}{section.4.2}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{4.3}}\hspace {-2pt}不足与改进方向}{9}{section.4.3}%
+\contentsline {chapter}{参考文献}{10}{section*.7}%
+\contentsline {chapter}{附\hskip \ccwd {}\hskip \ccwd {}录}{11}{appendix*.9}%
+\contentsline {section}{\numberline {A.}\hspace {-2pt}问题1使用代码}{11}{section.Alph0.1}%
+\contentsline {section}{\numberline {B.}\hspace {-2pt}问题2使用代码}{18}{section.Alph0.2}%
+\contentsline {section}{\numberline {C.}\hspace {-2pt}问题3使用代码}{18}{section.Alph0.3}%
+\contentsline {section}{\numberline {D.}\hspace {-2pt}像素数据集}{27}{section.Alph0.4}%
 \contentsfinish 
