@@ -4,9 +4,14 @@
 \vspace {-10pt}
 \addvspace {10\p@ }
 \vspace {-10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 50次独立优化实验柱状损失图}}{7}{figure.caption.4}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 50次独立优化实验面积差图}}{7}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 色度图}}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 50次独立优化实验柱状损失图}}{8}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 50次独立优化实验面积差图}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 色度图}}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Training Loss Curve (Hybrid Loss)}}{14}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces ΔE2000 Error Histogram (Trained with Hybrid Loss)}}{15}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CDF of ΔE2000 Error (Trained with Hybrid Loss)}}{15}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CIE 1931 Chromaticity Diagram with Multi-Primary Gamuts}}{16}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sample Color Predictions (Input RGBV -> Output RGBCX)}}{17}{figure.caption.11}%
 \addvspace {10\p@ }
 \vspace {-10pt}
 \addvspace {10\p@ }

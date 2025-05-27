@@ -13,7 +13,8 @@
 
 \bibitem[Finn et~al.(2017)Finn, Abbeel, and Levine]{MAML}
 Finn C, Abbeel P, Levine S.
-\newblock Model-agnostic meta-learning for fast adaptation of deep networks\allowbreak[C]//\allowbreak
+\newblock Model-agnostic meta-learning for fast adaptation of deep
+  networks\allowbreak[C]//\allowbreak
 International Conference on Machine Learning.
 \newblock 2017: 1126-1135.
 
