@@ -2,7 +2,8 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: contents/introduction.aux
-A level-1 auxiliary file: contents/problem_analysis.aux
+A level-1 auxiliary file: contents/model_assumption.aux
+A level-1 auxiliary file: contents/theory_base.aux
 A level-1 auxiliary file: contents/model_solution.aux
 A level-1 auxiliary file: contents/conclusion.aux
 The style file: gbt7714-numerical_new.bst
@@ -22,7 +23,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/refs.bib
 You've used 1 entry,
             5375 wiz_defined-function locations,
-            1056 strings with 7964 characters,
+            1057 strings with 7988 characters,
 and the built_in function-call counts, 8326 in all, are:
 = -- 171
 > -- 952

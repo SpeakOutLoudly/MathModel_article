@@ -1,0 +1,73 @@
+% !TeX encoding = UTF-8
+% 环境用两个长度参数，分别定义左边距以及词条和解释的水平距离，可自己调试以达美观（全去掉时默认：20mm，30mm）
+\begin{denotation}[0mm][15mm]
+	% 颜色空间相关符号
+	\item[$M$] 颜色空间转换矩阵 $M\in \mathbb{R}^{3\times 3}$
+	\item[$\mathbf{c}_i$] 第$i$个BT.2020 RGB颜色样本 $\mathbf{c}_i \in [0,1]^3$
+	\item[$\mathbf{c}'_i$] 映射后的显示屏RGB颜色样本
+	\item[$M_{BT\rightarrow XYZ}$] BT.2020色域到XYZ色彩空间的转换矩阵
+	\item[$M_{DP\rightarrow XYZ}$] 显示屏色域到XYZ色彩空间的转换矩阵
+	\item[$L^*$] CIE Lab色彩空间中的明度分量
+	\item[$a^*$] CIE Lab色彩空间中的红绿轴分量
+	\item[$b^*$] CIE Lab色彩空间中的黄蓝轴分量
+	\item[$\Delta E_{00}$] CIE DE2000色差公式
+	\item[$X, Y, Z$] CIE XYZ色彩空间的三刺激值
+	\item[$x, y$] CIE 1931色度图坐标
+	\item[$\overline{x}(\lambda), \overline{y}(\lambda), \overline{z}(\lambda)$] CIE 1931标准色度观察者匹配函数
+	\item[$S(\lambda)$] 光谱功率分布函数
+	
+	% 神经网络相关符号
+	\item[$\mathbf{X}$] 神经网络输入数据矩阵，4通道RGBV
+	\item[$\mathbf{Y}$] 神经网络目标输出数据矩阵，5通道RGBCX
+	\item[$W$] 神经网络权重矩阵
+	\item[$\mathbf{b}$] 神经网络偏置向量
+	\item[$f(\cdot)$] 激活函数
+	\item[$L_{MSE}$] 均方误差损失函数
+	\item[$L_{\Delta E_{2000}}$] 基于$\Delta E_{2000}$的感知误差损失函数
+	\item[$L_{total}$] 混合损失函数
+	\item[$\alpha, \beta$] 损失函数权重参数
+	\item[$\eta$] 学习率
+	
+	% 差分进化算法相关符号
+	\item[$\mathbf{x}_i$] 差分进化算法中第$i$个个体
+	\item[$NP$] 差分进化算法种群大小
+	\item[$F$] 差分进化算法变异因子
+	\item[$CR$] 差分进化算法交叉概率
+	\item[$\mathbf{v}_i$] 差分进化算法变异向量
+	\item[$\mathbf{u}_i$] 差分进化算法试验向量
+	\item[$G$] 差分进化算法迭代代数
+	
+	% LED颜色校正相关符号
+	\item[$\gamma_c$] 第$c$个颜色通道的伽马值
+	\item[$S_c$] 第$c$个颜色通道的比例因子
+	\item[$I_{\text{meas},c}$] 第$c$个颜色通道的测量值
+	\item[$I_{\text{target},c}$] 第$c$个颜色通道的目标值
+	\item[$\mathbf{x}$] 线性RGB向量 $\mathbf{x} = [R_\ell, G_\ell, B_\ell]^T$
+	\item[$\mathbf{y}$] 校正后RGB向量
+	\item[$L_{\mathrm{DE}}$] 基于CIE $\Delta E_{00}$的色差损失
+	\item[$L_{\mathrm{reg}}$] 正则化损失项
+	\item[$L_{\det}$] 行列式惩罚项
+	\item[$\mathcal{L}(M,\mathbf{b})$] LED颜色校正总目标函数
+	\item[$\lambda_1, \lambda_2, \lambda_3$] 损失函数权重参数
+	\item[$\epsilon$] 行列式惩罚阈值
+	\item[$\text{clip}$($\cdot$, [0,1])] 数值裁剪函数，限制在[0,1]范围
+	
+	% 数学运算符号
+	\item[$\|\cdot\|_F$] Frobenius范数
+	\item[$\|\cdot\|_2$] 欧几里得范数
+	\item[$\det(\cdot)$] 矩阵行列式
+	\item[$I_3$] $3 \times 3$单位矩阵
+	\item[$\mathbf{1}(\cdot)$] 指示函数
+	\item[$\lor$] 逻辑或运算符
+	
+	% 其他常用符号
+	\item[$N$] 样本数量
+	\item[$k$] 样本索引
+	\item[$c$] 颜色通道索引，$c \in \{R,G,B\}$
+	\item[$\text{popsize}$] 差分进化算法种群大小
+	\item[$\text{maxiter}$] 最大迭代次数
+	\item[$D65$] 标准光源D65白点
+	\item[$\delta$] CIE Lab转换中的阈值参数，$\delta = 6/29$
+\end{denotation}
+
+\endinput
