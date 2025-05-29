@@ -451,18 +451,13 @@ L_{\det}=\lambda_3 \cdot \mathbf{1}\bigl(\det M\leq0 \lor |\det M|<\epsilon\bigr
 	
 	\label{algorithm:led_correction}
 \end{algorithm}
+\vspace{20pt}
 
 \noindent\textbf{（4）校正应用流程}
 
 完整的颜色校正应用流程包括三个主要步骤：首先对输入sRGB进行反伽马校正，即线性化处理$\mathbf{x}_\ell = \Gamma^{-1}(\mathbf{x}_{\mathrm{srgb}})$；然后应用校正矩阵和偏置进行线性变换$\mathbf{y}_\ell = \mathrm{clip}\!\bigl(M^*\mathbf{x}_\ell+\mathbf{b}^*,[0,1]\bigr)$；最后进行正向伽马校正，重新编码恢复到sRGB空间$\mathbf{y}_{\mathrm{srgb}}=\Gamma(\mathbf{y}_\ell)$。
 
 \subsection[\hspace{-2pt}模型验证与分析]{{\heiti\zihao{4}\hspace{-8pt}模型验证与分析}}\label{subsec:3-validation}
-
-% 此处插入可视化结果和数值评估
-% 建议插入：
-% 1. 校正前后的RGB通道对比图
-% 2. 色差分布热力图
-% 3. 定量评估指标表格
 
 \noindent\textbf{（1）可视化结果分析}
 

@@ -5,22 +5,27 @@
 
 为了便于对后续视频源BT.2020色域与普通显示屏RGB色域之间映射关系的分析，我们首先引入标准色度系统的数学模型，对常见色彩空间进行建模表示。这些空间构成了本问题中色彩转换和损失评估的基础框架。
 
-\section[\hspace{-2pt}CIE1931标准色度观察者与光谱三刺激值]{{\heiti\zihao{4} \hspace{-8pt}CIE1931标准色度观察者与光谱三刺激值}}\label{section2: CIE1931标准色度观察者与光谱三刺激值}
-CIE 1931是是由国际照明委员会（CIE）于1931年定义的色彩模型，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda) $ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
+\section[\hspace{-2pt}颜色空间理论]{{\heiti\zihao{4} \hspace{-8pt}颜色空间理论}}\label{section2: 颜色空间理论}
+
+人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念。本节介绍本文涉及的主要颜色空间及其相互转换关系。
+
+\subsection[\hspace{-2pt}CIE1931标准色度观察者与XYZ颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIE1931标准色度观察者与XYZ颜色空间}}\label{subsection2: CIE1931标准色度观察者与XYZ颜色空间}
+
+CIE 1931是由国际照明委员会（CIE）于1931年定义的色彩模型，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda)$ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
 \begin{equation}
 \begin{aligned}
   &X = \int_{\lambda}S(\lambda)\overline{x}(\lambda)d\lambda,\ \ \ Y = \int_{\lambda}S(\lambda)\overline{y}(\lambda)d\lambda,\ \ \ Z = \int_{\lambda}S(\lambda)\overline{z}(\lambda)d\lambda
 \end{aligned}
 \end{equation}
 
-\section[\hspace{-2pt}CIEXYZ颜色空间]{{\heiti\zihao{4} \hspace{-8pt}CIEXYZ颜色空间}}\label{section2: CIEXYZ颜色空间}
 CIEXYZ 是一个以三刺激值为基础的线性色彩空间，被视为"设备无关"的色彩表示方式。其三个分量 $(X,Y,Z)$ 分别对应红、绿、蓝三种感知通道。Y 分量也通常用作\textbf{亮度（Luminance）}的代表。该空间是许多其他色彩空间（如 Lab、sRGB、BT.2020）的中间标准基础。通常不同色域之间的转换以此为中介。
 
-\section[\hspace{-2pt}CIELab颜色空间]{{\heiti\zihao{4} \hspace{-8pt}CIELab颜色空间}}\label{section2: CIELab颜色空间}
+\subsection[\hspace{-2pt}CIELab颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIELab颜色空间}}\label{subsection2: CIELab颜色空间}
+
 CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间，能够更好地符合人眼对颜色差异的敏感性。其由以下三个分量构成：
 \begin{equation}
 \begin{aligned}
-  &L^{*}\ ,\ \ a^{*}\ ,\ \ b^P{*}\ 
+  &L^{*}\ ,\ \ a^{*}\ ,\ \ b^{*}\ 
 \end{aligned}
 \end{equation}
 其中，$L^{*}$代表明度，$a^{*}$代表红绿轴，$b^{*}$代表黄蓝轴。具体变换公式如下（以D65白点为例）：
@@ -41,11 +46,11 @@ CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间，能够�
 \end{aligned}
 \end{equation}
 
-其中$(X_{n},Y_{n},Z_{n})$ 为参考白点（如D65）的三刺激值。
+其中$(X_{n},Y_{n},Z_{n})$ 为参考白点（如D65）的三刺激值。在 Lab 空间中，两点之间的欧氏距离与人眼感知的颜色差异近似成正比，这使其成为颜色差异评估的理想空间。
 
-\section[\hspace{-2pt}CIE1931xy色度图与色域表示]{{\heiti\zihao{4} \hspace{-8pt}CIE1931xy色度图与色域表示}}\label{section2: CIE1931xy色度图与色域表示}
+\subsection[\hspace{-2pt}色度图与色域表示]{{\heiti\zihao{-4} \hspace{-8pt}色度图与色域表示}}\label{subsection2: 色度图与色域表示}
+
 CIEXYZ 空间中颜色可以通过如下变换得到色度图中的坐标：
-
 \begin{equation}
 \begin{aligned}
   &x=\frac{X}{X+Y+Z},\ \ y=\frac{Y}{X+Y+Z}
@@ -54,8 +59,25 @@ CIEXYZ 空间中颜色可以通过如下变换得到色度图中的坐标：
 
 该色度图表示了所有可见光的二维投影范围，设备的色域可以通过其三基色的 $(x,y)$ 点连线形成三角形表示。色域越大，所能表示的颜色越丰富。该图是色彩匹配与色彩损失分析的重要工具。
 
-\section[\hspace{-2pt}CIEDE2000色差公式]{{\heiti\zihao{4} \hspace{-8pt}CIEDE2000色差公式}}\label{section2: CIEDE2000色差公式}
+色域 (Gamut) 是指一个颜色系统或设备能够显示或捕捉的颜色范围。在 CIE 1931 色度图上，色域通常由其基色（原色）的色度坐标连接形成的多边形表示。色域映射 (Gamut Mapping) 是指将一个色域的颜色转换到另一个色域的过程，旨在最小化颜色失真，尤其是在目标色域小于源色域时。
 
+传统的显示系统通常采用三基色 (RGB) 来显示颜色。然而，为了更广阔的色域和更丰富的色彩表现，多基色显示技术（如本问题中的五通道 LED 显示屏）正在兴起。这些系统通过增加额外的基色来扩展其可显示的颜色范围。
+
+\subsection[\hspace{-2pt}常见颜色空间对比]{{\heiti\zihao{-4} \hspace{-8pt}常见颜色空间对比}}\label{subsection2: 常见颜色空间对比}
+
+常见的颜色空间包括：
+
+\begin{itemize}
+    \item \textbf{RGB (Red, Green, Blue)}：基于三原色加法混色的颜色模型，常用于显示设备和图像输入设备。然而，RGB 并非感知均匀，即欧氏距离不直接对应人眼感知的颜色差异。
+    \item \textbf{XYZ (CIE 1931 XYZ)}：国际照明委员会 (CIE) 定义的一种基于人眼视觉生理特性的颜色空间。它涵盖了人眼可见的所有颜色，且与设备无关。其分量 $X, Y, Z$ 分别对应于光谱在人眼视锥细胞响应曲线下的积分。$Y$ 分量通常表示亮度信息。
+    \item \textbf{Lab (CIE L*a*b*)}：一种感知均匀的颜色空间，从 XYZ 空间推导而来。$L^*$ 表示亮度，从黑到白；$a^*$ 表示从绿到红的颜色信息；$b^*$ 表示从蓝到黄的颜色信息。
+\end{itemize}
+
+\section[\hspace{-2pt}颜色差异度量理论]{{\heiti\zihao{4} \hspace{-8pt}颜色差异度量理论}}\label{section2: 颜色差异度量理论}
+
+为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。
+
+\subsection[\hspace{-2pt}CIEDE2000色差公式]{{\heiti\zihao{-4} \hspace{-8pt}CIEDE2000色差公式}}\label{subsection2: CIEDE2000色差公式}
 
 为了更精确的对问题进行建模并且便于后续损失函数以及差分进化算法的实现，我们将题目中的BT.2020颜色空间以及显示屏的颜色空间从 xy 色度坐标转换为 XYZ 颜色空间，再利用 Lab 颜色空间公式转换为 $(L^{*},a^{*},b^{*})$ 。最后计算 $\Delta E_{00}$ 损失值。
 
@@ -76,18 +98,23 @@ $\Delta E_{00}$ 的计算公式如下：
   &\Delta E_{00}=\sqrt{(\frac{\Delta L^{'}}{k_{L}S_{L}})^{2}+(\frac{\Delta C^{'}}{k_{C}S_{C}})^{2}+(\frac{\Delta H^{'}}{k_{H}S_{H}})^{2}+R_{T}\cdot{(\frac{\Delta C^{'}}{k_{C}S_{C}})}\cdot (\frac{\Delta H^{'}}{k_{H}S_{H}})}
 \end{aligned}
 \end{equation}
+
+其详细计算步骤包括：
+
 \textbf{（1）明度差与平均明度}
 \begin{equation}
 \begin{aligned}
    &\Delta L^{'} = L^{*}_{2}-L^{*}_{1},\ \ \overline{L}=\frac{L^{*}_{2}-L^{*}_{1}}{2}
 \end{aligned}
 \end{equation}
+
 \textbf{（2）色度差与平均色度}
 \begin{equation}
 \begin{aligned}
   &C_{1}=\sqrt{a^{*2}_{1}+b^{*2}_{1}},\ \ C_{2}=\sqrt{a^{*2}_{2}+b^{*2}_{2}},\ \ \Delta C^{'}=C_{2}-C_{1},\ \ \overline{C}=\frac{C_{1}+C_2}{2}
 \end{aligned}
 \end{equation}
+
 \textbf{（3）色相角差与平均色相角}
 \begin{equation}
 \begin{aligned}
@@ -100,6 +127,7 @@ $\Delta E_{00}$ 的计算公式如下：
  \end{cases}
 \end{aligned}
 \end{equation}
+
 \textbf{（4）调整因子}
 \begin{equation}
 \begin{aligned}
@@ -107,44 +135,32 @@ $\Delta E_{00}$ 的计算公式如下：
   &T=1-0.17\cos(\overline{h}-30^{\circ})+0.24\cos(2\overline{h})+0.32\cos(3\overline{h}+6^{\circ})-0.20\cos(4\overline{h}-63^{\circ})
 \end{aligned}
 \end{equation}
+
 \textbf{（5）权重因子}
 \begin{equation}
 \begin{aligned}
  &S_{L}=1+\frac{0.015(L-50)^{2}}{\sqrt{20+(\overline{L}-50)^{2}}},\ \ S_{C}=1+0.045\overline{C},\ \ S_{H}=1+0.015\overline{C}T
 \end{aligned}
 \end{equation}
+
 \textbf{（6）旋转补偿因子}
 \begin{equation}
 \begin{aligned}
  &R_{T}=-\sin(2\Delta \theta)\cdot R_{C},\ \ \Delta \theta=30\exp\{-(\frac{\overline{h}-275^{\circ}}{25})^{2}\},\ \ R_{C}=2\sqrt{\frac{\overline{C^{7}}}{\overline{C^{7}}+25^{7}}}
 \end{aligned}
 \end{equation}
+
 其中：$\Delta L^{'}$ :明度差，$\Delta C^{'}$ :色度差，$\Delta H^{'}$ :色相差，$S_{L},S_{C},S_{H}$ :感知缩放因子，$k_{L}=k_{C}=k_{H}=1$ :常用单位权重。
 
-由上述公式，可以计算出两个 CIELab值 的色差。该函数对人眼感知差异具有良好拟合性能，因此被广泛用于图像质量、颜色匹配等领域。
-\section[\hspace{-2pt}颜色感知与颜色空间]{{\heiti\zihao{4} \hspace{-8pt}颜色感知与颜色空间}}\label{section2: 颜色感知与颜色空间}
+\subsection[\hspace{-2pt}色差公式的应用意义]{{\heiti\zihao{-4} \hspace{-8pt}色差公式的应用意义}}\label{subsection2: 色差公式的应用意义}
 
-人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念。常见的颜色空间包括：
-
+由上述公式，可以计算出两个 CIELab值 的色差。该函数对人眼感知差异具有良好拟合性能，因此被广泛用于图像质量、颜色匹配等领域。$\Delta E_{2000}$ 值越小，表示两种颜色感知差异越小。通常认为：
 \begin{itemize}
-    \item \textbf{RGB (Red, Green, Blue)}：基于三原色加法混色的颜色模型，常用于显示设备和图像输入设备。然而，RGB 并非感知均匀，即欧氏距离不直接对应人眼感知的颜色差异。
-    \item \textbf{XYZ (CIE 1931 XYZ)}：国际照明委员会 (CIE) 定义的一种基于人眼视觉生理特性的颜色空间。它涵盖了人眼可见的所有颜色，且与设备无关。其分量 $X, Y, Z$ 分别对应于光谱在人眼视锥细胞响应曲线下的积分。$Y$ 分量通常表示亮度信息。
-    \item \textbf{Lab (CIE L*a*b*)}：一种感知均匀的颜色空间，从 XYZ 空间推导而来。$L^*$ 表示亮度，从黑到白；$a^*$ 表示从绿到红的颜色信息；$b^*$ 表示从蓝到黄的颜色信息。在 Lab 空间中，两点之间的欧氏距离与人眼感知的颜色差异近似成正比。
+    \item $\Delta E_{00} < 1.0$：人眼难以察觉的颜色差异
+    \item $1.0 \leq \Delta E_{00} < 2.0$：训练有素的观察者可察觉的微小差异
+    \item $2.0 \leq \Delta E_{00} < 4.0$：普通观察者可察觉的明显差异
+    \item $\Delta E_{00} \geq 4.0$：显著的颜色差异
 \end{itemize}
-
-\section[\hspace{-2pt}色域与色域映射]{{\heiti\zihao{4} \hspace{-8pt}色域与色域映射}}\label{section2: 色域与色域映射}
-
-色域 (Gamut) 是指一个颜色系统或设备能够显示或捕捉的颜色范围。在 CIE 1931 色度图上，色域通常由其基色（原色）的色度坐标连接形成的多边形表示。色域映射 (Gamut Mapping) 是指将一个色域的颜色转换到另一个色域的过程，旨在最小化颜色失真，尤其是在目标色域小于源色域时。
-
-传统的显示系统通常采用三基色 (RGB) 来显示颜色。然而，为了更广阔的色域和更丰富的色彩表现，多基色显示技术（如本问题中的五通道 LED 显示屏）正在兴起。这些系统通过增加额外的基色来扩展其可显示的颜色范围。
-
-\section[\hspace{-2pt}颜色差异度量 ($\Delta E$)]{{\heiti\zihao{4} \hspace{-8pt}颜色差异度量 ($\Delta E$)}}\label{section2: 颜色差异度量}
-
-为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。$\Delta E_{2000}$ 值越小，表示两种颜色感知差异越小。
-
-其公式如下：
-$$\Delta E_{00} = \sqrt{\left(\frac{\Delta L'}{k_L S_L}\right)^2 + \left(\frac{\Delta C'}{k_C S_C}\right)^2 + \left(\frac{\Delta H'}{k_H S_H}\right)^2 + R_T \left(\frac{\Delta C'}{k_C S_C}\right) \left(\frac{\Delta H'}{k_H S_H}\right)}$$
-其中，$\Delta L'$, $\Delta C'$, $\Delta H'$ 分别是修正后的亮度、彩度和色调差值；$S_L, S_C, S_H$ 是权重函数，用于调整不同区域的感知均匀性；$R_T$ 是旋转项，用于处理蓝色区域的特殊感知。$k_L, k_C, k_H$ 是参数，通常取 1。
 
 \section[\hspace{-2pt}伽马校正理论]{{\heiti\zihao{4} \hspace{-8pt}伽马校正理论}}\label{section2: 伽马校正理论}
 
@@ -183,17 +199,17 @@ I_{\text{output},c} = S_c \cdot (I_{\text{input},c})^{\gamma_c}
 
 \textbf{前向变换（编码）：}
 \begin{equation}
-I_{\text{encoded}} = \text{clip}((I_{\text{linear}} \cdot S)^{\gamma}, [0,1])
+I_{\text{encoded}} = \mathrm{clip}((I_{\text{linear}} \cdot S)^{\gamma}, [0,1])
 \end{equation}
 
 \textbf{反向变换（线性化）：}
 \begin{equation}
-I_{\text{linear}} = \text{clip}((I_{\text{encoded}})^{1/\gamma} / S, [0,1])
+I_{\text{linear}} = \mathrm{clip}((I_{\text{encoded}})^{1/\gamma} / S, [0,1])
 \end{equation}
 
-其中$\text{clip}(\cdot, [0,1])$函数确保输出值在有效范围内。
+其中$\mathrm{clip}(\cdot, [0,1])$函数确保输出值在有效范围内。
 
-\subsection[\hspace{-2pt}伽马校正的物理意义]{{\heiti\zihao{-4} \hspace{-8pt}伽马校正的物理意义}}\label{subsection2: 伽马校正的物理意义}
+\subsection[\hspace{-2pt}伽马校正的物理意义与应用]{{\heiti\zihao{-4} \hspace{-8pt}伽马校正的物理意义与应用}}\label{subsection2: 伽马校正的物理意义与应用}
 
 伽马校正的物理意义体现在以下几个方面：
 
