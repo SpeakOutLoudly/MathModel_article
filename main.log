@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.17)  29 MAY 2025 15:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.14)  29 MAY 2025 19:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1609,15 +1609,15 @@ Package fontspec Info:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;mapping=tex-text;"
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
-(d:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
- (d:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55.
- (d:/Latex/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
@@ -2703,23 +2703,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B51CDD99EF29EC23785D47A6D9B919B9;6934
-(rerunfilecheck)             After:  5F0EFF6882E878866509E4FB2267FDDD;7668.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: AF5429F3E6E605F9D6025D2E0E0EFD0B;8134.
  ) 
 Here is how much of TeX's memory you used:
- 44835 strings out of 473832
- 977872 string characters out of 5733158
- 1961667 words of memory out of 5000000
- 66968 multiletter control sequences out of 15000+600000
+ 44839 strings out of 473832
+ 977955 string characters out of 5733158
+ 1963275 words of memory out of 5000000
+ 66972 multiletter control sequences out of 15000+600000
  578762 words of font info for 192 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  107i,17n,131p,1447b,2608s stack positions out of 10000i,1000n,20000p,200000b,200000s

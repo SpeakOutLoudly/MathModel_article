@@ -665,7 +665,6 @@ pdfcreator = {CQUThesis--v\version, a LaTeX template.}
 \vskip12bp
 \cqu@put@kw{{\heiti\cqu@ckw@title\cqu@title@separatorCN}}{\cqu@ckeywords}
 \if@twosideprint\ifcqu@openany\ifcqu@abstractopenright\cqu@addblankpage\fi\fi\fi
-\cqu@put@kw{\textbf{\cqu@ekw@title\cqu@title@separatorEN}}{\cqu@ekeywords}
 }
 \newbox\cqu@kw
 \newcommand{\cqu@put@kw}[2]{%
