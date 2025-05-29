@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {\raisebox {0.0mm}{1.1}}\hspace {-2pt}问题背景与意义}{1}{section.1.1}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{1.2}}\hspace {-2pt}问题提出与研究内容}{1}{section.1.2}%
 \contentsline {subsection}{\numberline {\raisebox {0.0mm}{1.2.1}}\hspace {-2pt}问题一：颜色空间转换}{1}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {\raisebox {0.0mm}{1.2.2}}\hspace {-2pt}问题二：颜色空间转换（4通道到5通道）}{1}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {\raisebox {0.0mm}{1.2.2}}\hspace {-2pt}问题二：颜色空间转换（4通道到5通道）}{2}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {\raisebox {0.0mm}{1.2.3}}\hspace {-2pt}问题三：LED显示器颜色校正}{2}{subsection.1.2.3}%
 \contentsline {chapter}{\numberline {\raisebox {0.0mm}{2}}\hspace {0pt}模型假设}{3}{chapter.2}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{2.1}}\hspace {-2pt}颜色空间线性映射假设}{3}{section.2.1}%
