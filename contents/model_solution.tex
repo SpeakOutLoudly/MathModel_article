@@ -10,7 +10,7 @@
 \begin{equation}\label{eq:linear_map}
   c^{'}_{i} = M\,c_{i}
 \end{equation}
-然后通过预定义的色彩转换矩阵 $M_{BT\rightarrow XYZ}$ 与 $M_{DP\rightarrow XYZ}$ 将源与目标向量映射至 XYZ 空间，并进一步转换至 CIELab 空间，计算感知误差 $\Delta E_{00}$\cite{luo2001development,sharma2005ciede2000}：
+然后通过预定义的色彩转换矩阵 $M_{BT\rightarrow XYZ}$ 与 $M_{DP\rightarrow XYZ}$ 将源与目标向量映射至 XYZ 空间，并进一步转换至 CIELab 空间，计算感知误差 $\Delta E_{00}$\cite{luo2001development}：
 \begin{equation}\label{eq:deltaE}
   L(M)=\frac{1}{N}\sum_{i=1}^{N}\Delta E_{00}\bigl(\mathrm{Lab}(M_{BT\rightarrow XYZ}\,c_{i}),\;\mathrm{Lab}(M_{DP\rightarrow XYZ}\,M\,c_{i})\bigr).
 \end{equation}
@@ -166,7 +166,7 @@
 
 \textbf{输出层}包含5个神经元，对应LED显示屏的五个输出通道：红(R)、绿(G)、蓝(B)、青(C)，以及额外的X通道（假设为一种补充红色或特定效果通道）。Sigmoid激活函数$f(x) = \frac{1}{1+e^{-x}}$将输出值限制在[0,1]范围内，保证输出的物理合理性。
 
-选择FNN的优势在于其灵活性和通用性。无需对输入输出关系进行复杂的先验假设，FNN可以通过训练自动从数据中学习到最佳的映射方式。多层结构和非线性激活函数使其能够处理高度复杂的颜色转换曲线和相互作用。
+选择FNN的优势在于其灵活性和通用性。无需对输入输出关系进行复杂的先验假设，FNN可以通过训练自动从数据中学习到最佳的映射方式。多层结构和非线性激活函数使其能够处理高度复杂的颜色转换曲线和相互作用。\cite{1024493909.nh}
 
 \subsection[\hspace{-2pt}损失函数设计]{{\heiti\zihao{4} \hspace{-8pt}损失函数设计}}\label{section2: 损失函数设计}
 
