@@ -7,11 +7,11 @@
 
 \section[\hspace{-2pt}颜色空间理论]{{\heiti\zihao{4} \hspace{-8pt}颜色空间理论}}\label{section2: 颜色空间理论}
 
-人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念。本节介绍本文涉及的主要颜色空间及其相互转换关系。
+人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念\cite{hunt2004reproduction,fairchild2013color}。本节介绍本文涉及的主要颜色空间及其相互转换关系。
 
 \subsection[\hspace{-2pt}CIE1931标准色度观察者与XYZ颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIE1931标准色度观察者与XYZ颜色空间}}\label{subsection2: CIE1931标准色度观察者与XYZ颜色空间}
 
-CIE 1931是由国际照明委员会（CIE）于1931年定义的色彩模型，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda)$ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
+CIE 1931是由国际照明委员会（CIE）于1931年定义的色彩模型\cite{berns2019billmeyer}，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda)$ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
 \begin{equation}
 \begin{aligned}
   &X = \int_{\lambda}S(\lambda)\overline{x}(\lambda)d\lambda,\ \ \ Y = \int_{\lambda}S(\lambda)\overline{y}(\lambda)d\lambda,\ \ \ Z = \int_{\lambda}S(\lambda)\overline{z}(\lambda)d\lambda
@@ -22,7 +22,7 @@ CIEXYZ 是一个以三刺激值为基础的线性色彩空间，被视为"设备
 
 \subsection[\hspace{-2pt}CIELab颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIELab颜色空间}}\label{subsection2: CIELab颜色空间}
 
-CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间，能够更好地符合人眼对颜色差异的敏感性。其由以下三个分量构成：
+CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间\cite{fairchild2013color,reinhard2010color}，能够更好地符合人眼对颜色差异的敏感性。其由以下三个分量构成：
 \begin{equation}
 \begin{aligned}
   &L^{*}\ ,\ \ a^{*}\ ,\ \ b^{*}\ 
@@ -75,7 +75,7 @@ CIEXYZ 空间中颜色可以通过如下变换得到色度图中的坐标：
 
 \section[\hspace{-2pt}颜色差异度量理论]{{\heiti\zihao{4} \hspace{-8pt}颜色差异度量理论}}\label{section2: 颜色差异度量理论}
 
-为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。
+为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)\cite{luo2001development}。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式\cite{sharma2005ciede2000,YSZL200407020}，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。
 
 \subsection[\hspace{-2pt}CIEDE2000色差公式]{{\heiti\zihao{-4} \hspace{-8pt}CIEDE2000色差公式}}\label{subsection2: CIEDE2000色差公式}
 
