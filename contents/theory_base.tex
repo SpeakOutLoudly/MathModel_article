@@ -7,22 +7,22 @@
 
 \section[\hspace{-2pt}颜色空间理论]{{\heiti\zihao{4} \hspace{-8pt}颜色空间理论}}\label{section2: 颜色空间理论}
 
-人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念\cite{hunt2004reproduction,fairchild2013color}。本节介绍本文涉及的主要颜色空间及其相互转换关系。
+人类对颜色的感知是一个复杂的生理和心理过程。为了量化和描述颜色，引入了颜色空间的概念。本节介绍本文涉及的主要颜色空间及其相互转换关系。
 
 \subsection[\hspace{-2pt}CIE1931标准色度观察者与XYZ颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIE1931标准色度观察者与XYZ颜色空间}}\label{subsection2: CIE1931标准色度观察者与XYZ颜色空间}
 
-CIE 1931是由国际照明委员会（CIE）于1931年定义的色彩模型\cite{berns2019billmeyer}，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda)$ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
+CIE 1931是由国际照明委员会（CIE）于1931年定义的色彩模型，其核心在于基于实验测量建立的"标准色度观察者"响应曲线。这一模型通过三条匹配函数 $\overline{x}(\lambda),\overline{y}(\lambda),\overline{z}(\lambda)$ 将任意波长下的光谱功率分布（SPD）映射为三刺激值（Tristimulus Values）：
 \begin{equation}
 \begin{aligned}
   &X = \int_{\lambda}S(\lambda)\overline{x}(\lambda)d\lambda,\ \ \ Y = \int_{\lambda}S(\lambda)\overline{y}(\lambda)d\lambda,\ \ \ Z = \int_{\lambda}S(\lambda)\overline{z}(\lambda)d\lambda
 \end{aligned}
 \end{equation}
 
-CIEXYZ 是一个以三刺激值为基础的线性色彩空间，被视为"设备无关"的色彩表示方式。其三个分量 $(X,Y,Z)$ 分别对应红、绿、蓝三种感知通道。Y 分量也通常用作\textbf{亮度（Luminance）}的代表。该空间是许多其他色彩空间（如 Lab、sRGB、BT.2020）的中间标准基础。通常不同色域之间的转换以此为中介。
+CIEXYZ 是一个以三刺激值为基础的线性色彩空间，被视为"设备无关"的色彩表示方式。其三个分量 $(X,Y,Z)$ 分别对应红、绿、蓝三种感知通道。Y 分量也通常用作\textbf{亮度（Luminance）}的代表。该空间是许多其他色彩空间（如 Lab、sRGB、BT.2020）的中间标准基础。通常不同色域之间的转换以此为中介。\cite{fairman1997cie}
 
 \subsection[\hspace{-2pt}CIELab颜色空间]{{\heiti\zihao{-4} \hspace{-8pt}CIELab颜色空间}}\label{subsection2: CIELab颜色空间}
 
-CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间\cite{fairchild2013color,reinhard2010color}，能够更好地符合人眼对颜色差异的敏感性。其由以下三个分量构成：
+CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间，能够更好地符合人眼对颜色差异的敏感性。其由以下三个分量构成：
 \begin{equation}
 \begin{aligned}
   &L^{*}\ ,\ \ a^{*}\ ,\ \ b^{*}\ 
@@ -42,11 +42,13 @@ CIELab 空间是基于 CIEXYZ 空间定义的感知均匀色彩空间\cite{fairc
 
 \begin{equation}
 \begin{aligned}
-  &L^{*} = 116f(\frac{Y}{Y_{n}})-16,\ \ \ a^{*}=500[f(\frac{X}{X_{n}})-f(\frac{Y}{Y_{n}})],\ \ \ b^{*} = 200[f(\frac{Y}{Y_{n}})-f(\frac{Z}{Z_{n}})]
+  L^{*} &= 116f\left(\frac{Y}{Y_{n}}\right)-16\\
+  a^{*} &= 500\left[f\left(\frac{X}{X_{n}}\right)-f\left(\frac{Y}{Y_{n}}\right)\right]\\
+  b^{*} &= 200\left[f\left(\frac{Y}{Y_{n}}\right)-f\left(\frac{Z}{Z_{n}}\right)\right]
 \end{aligned}
 \end{equation}
 
-其中$(X_{n},Y_{n},Z_{n})$ 为参考白点（如D65）的三刺激值。在 Lab 空间中，两点之间的欧氏距离与人眼感知的颜色差异近似成正比，这使其成为颜色差异评估的理想空间。
+其中$(X_{n},Y_{n},Z_{n})$ 为参考白点（如D65）的三刺激值。在 Lab 空间中，两点之间的欧氏距离与人眼感知的颜色差异近似成正比，这使其成为颜色差异评估的理想空间。\cite{hunter1958photoelectric}
 
 \subsection[\hspace{-2pt}色度图与色域表示]{{\heiti\zihao{-4} \hspace{-8pt}色度图与色域表示}}\label{subsection2: 色度图与色域表示}
 
@@ -75,7 +77,7 @@ CIEXYZ 空间中颜色可以通过如下变换得到色度图中的坐标：
 
 \section[\hspace{-2pt}颜色差异度量理论]{{\heiti\zihao{4} \hspace{-8pt}颜色差异度量理论}}\label{section2: 颜色差异度量理论}
 
-为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)\cite{luo2001development}。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式\cite{sharma2005ciede2000,YSZL200407020}，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。
+为了量化两种颜色之间人眼感知的差异，引入了颜色差异度量 $\Delta E$ (Delta E)。其中，$\Delta E_{2000}$ (CIE DE2000) 是目前最广泛接受的颜色差异公式，它在 Lab 空间的基础上进行了修正，以更好地反映人眼的非线性颜色感知特性，尤其是在中性色、亮度和色调方面。
 
 \subsection[\hspace{-2pt}CIEDE2000色差公式]{{\heiti\zihao{-4} \hspace{-8pt}CIEDE2000色差公式}}\label{subsection2: CIEDE2000色差公式}
 
@@ -164,7 +166,7 @@ $\Delta E_{00}$ 的计算公式如下\cite{YSZL200407020}：
 
 \section[\hspace{-2pt}伽马校正理论]{{\heiti\zihao{4} \hspace{-8pt}伽马校正理论}}\label{section2: 伽马校正理论}
 
-伽马校正（Gamma Correction）是数字图像处理中的重要概念，用于补偿显示设备的非线性响应特性。在理想情况下，显示设备的输出亮度应与输入信号成线性关系，但实际显示设备（如CRT显示器、LCD显示器、LED显示屏等）通常具有非线性的响应曲线。
+伽马校正（Gamma Correction）是数字图像处理中的重要概念，用于补偿显示设备的非线性响应特性。在理想情况下，显示设备的输出亮度应与输入信号成线性关系，但实际显示设备（如CRT显示器、LCD显示器、LED显示屏等）通常具有非线性的响应曲线。\cite{gamma_correction}
 
 \subsection[\hspace{-2pt}伽马响应模型]{{\heiti\zihao{-4} \hspace{-8pt}伽马响应模型}}\label{subsection2: 伽马响应模型}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -16,60 +16,31 @@ Poynton C.
 \newblock Digital video and hd: algorithms and interfaces\allowbreak[J].
 \newblock Elsevier, 2012.
 
-\bibitem[{ITU-R Recommendation BT.2020-2}(2015)]{bt2020standard}
-{ITU-R Recommendation BT.2020-2}.
-\newblock Parameter values for ultra-high definition television systems for production and international programme exchange\allowbreak[J].
-\newblock International Telecommunication Union, 2015.
+\bibitem[Sugawara et~al.(2014)Sugawara, Choi, and Wood]{6784055}
+Sugawara M, Choi S~Y, Wood D.
+\newblock Ultra-high-definition television (rec. itu-r bt.2020): A generational leap in the evolution of television [standards in a nutshell]\allowbreak[J/OL].
+\newblock IEEE Signal Processing Magazine, 2014, 31\allowbreak (3): 170-174.
+\newblock DOI: \doi{10.1109/MSP.2014.2302331}.
 
-\bibitem[Anderson et~al.(1999)Anderson, Motta, Chandrasekar, and Stokes]{srgb1999}
-Anderson M, Motta R, Chandrasekar S, et~al.
-\newblock A standard default color space for the internet—{sRGB}\allowbreak[J].
-\newblock World Wide Web Consortium, 1999.
+\bibitem[Fairman et~al.(1997)Fairman, Brill, and Hemmendinger]{fairman1997cie}
+Fairman H~S, Brill M~H, Hemmendinger H.
+\newblock How the cie 1931 color-matching functions were derived from wright-guild data\allowbreak[J].
+\newblock Color Research \& Application: Endorsed by Inter-Society Color Council, The Colour Group (Great Britain), Canadian Society for Color, Color Science Association of Japan, Dutch Society for the Study of Color, The Swedish Colour Centre Foundation, Colour Society of Australia, Centre Fran{\c{c}}ais de la Couleur, 1997, 22\allowbreak (1): 11-23.
 
-\bibitem[Liu et~al.(2009)Liu, Chong, Wong, and Tam]{led_display_tech}
-Liu Z, Chong W~S, Wong K~M, et~al.
-\newblock {LED} display technology and applications\allowbreak[J].
-\newblock Optoelectronics and Advanced Materials, 2009, 11\allowbreak (10): 1311-1315.
-
-\bibitem[Fairchild(2013)]{fairchild2013color}
-Fairchild M~D.
-\newblock Color appearance models\allowbreak[J].
-\newblock John Wiley \& Sons, 2013.
-
-\bibitem[Hunt et~al.(2011)Hunt and Pointer]{hunt2004reproduction}
-Hunt R~W~G, Pointer M~R.
-\newblock The reproduction of colour\allowbreak[J].
-\newblock John Wiley \& Sons, 2011.
-
-\bibitem[Berns(2019)]{berns2019billmeyer}
-Berns R~S.
-\newblock Billmeyer and saltzman's principles of color technology\allowbreak[J].
-\newblock John Wiley \& Sons, 2019.
-
-\bibitem[Reinhard et~al.(2008)Reinhard, Arief, Heidrich, and Colantoni]{reinhard2010color}
-Reinhard E, Arief E, Heidrich W, et~al.
-\newblock Color imaging: fundamentals and applications\allowbreak[J].
-\newblock CRC Press, 2008.
-
-\bibitem[Luo et~al.(2001)Luo, Cui, and Rigg]{luo2001development}
-Luo M~R, Cui G, Rigg B.
-\newblock The development of the {CIE} 2000 colour-difference formula: {CIEDE2000}\allowbreak[J].
-\newblock Color Research \& Application, 2001, 26\allowbreak (5): 340-350.
-
-\bibitem[Sharma et~al.(2005)Sharma, Wu, and Dalal]{sharma2005ciede2000}
-Sharma G, Wu W, Dalal E~N.
-\newblock The {CIEDE2000} color-difference formula: Implementation notes, supplementary test data, and mathematical observations\allowbreak[J].
-\newblock Color Research \& Application, 2005, 30\allowbreak (1): 21-30.
+\bibitem[Hunter(1958)]{hunter1958photoelectric}
+Hunter R~S.
+\newblock Photoelectric color difference meter\allowbreak[J].
+\newblock Journal of the Optical Society of America, 1958, 48\allowbreak (12): 985-995.
 
 \bibitem[郑元林刘士伟(2004)]{YSZL200407020}
 郑元林刘士伟.
 \newblock 最新色差公式:CIEDE2000\allowbreak[J].
 \newblock 印刷质量与标准化, 2004\allowbreak (07): 34-37.
 
-\bibitem[Storn et~al.(1997)Storn and Price]{storn1997differential}
-Storn R, Price K.
-\newblock Differential evolution--a simple and efficient heuristic for global optimization over continuous spaces\allowbreak[J].
-\newblock Journal of Global Optimization, 1997, 11\allowbreak (4): 341-359.
+\bibitem[Gonzalez et~al.(2018)Gonzalez and Woods]{gamma_correction}
+Gonzalez R~C, Woods R~E.
+\newblock Gamma correction in digital image processing\allowbreak[J].
+\newblock Digital Image Processing, 2018: 156-189.
 
 \bibitem[Price et~al.(2013)Price, Storn, and Lampinen]{price2013differential}
 Price K, Storn R~M, Lampinen J~A.
@@ -80,25 +51,5 @@ Price K, Storn R~M, Lampinen J~A.
 王广志.
 \newblock 基于ColorNet架构的比色传感器阵列用于猪肉新鲜度检测\allowbreak[D].
 \newblock 东北电力大学, 2024.
-
-\bibitem[黄敏\ 等(2006)黄敏, 刘浩学, 徐艳芳, 廖宁放, and 罗永道]{BZGC200606058}
-黄敏, 刘浩学, 徐艳芳, 等.
-\newblock CIE94 CIEDE2000色差公式均匀性分析\allowbreak[J].
-\newblock 包装工程, 2006\allowbreak (06): 153-154+156.
-
-\bibitem[Loshchilov et~al.(2017)Loshchilov and Hutter]{loshchilov2017decoupled}
-Loshchilov I, Hutter F.
-\newblock Decoupled weight decay regularization\allowbreak[A].
-\newblock 2017.
-
-\bibitem[Kingma et~al.(2014)Kingma and Ba]{kingma2014adam}
-Kingma D~P, Ba J.
-\newblock Adam: A method for stochastic optimization\allowbreak[A].
-\newblock 2014.
-
-\bibitem[Gonzalez et~al.(2018)Gonzalez and Woods]{gamma_correction}
-Gonzalez R~C, Woods R~E.
-\newblock Gamma correction in digital image processing\allowbreak[J].
-\newblock Digital Image Processing, 2018: 156-189.
 
 \end{thebibliography}
