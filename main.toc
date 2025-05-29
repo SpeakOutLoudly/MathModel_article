@@ -11,8 +11,11 @@
 \contentsline {section}{\numberline {\raisebox {0.0mm}{2.1}}\hspace {-2pt}颜色空间线性映射假设}{4}{section.2.1}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{2.2}}\hspace {-2pt}设备响应稳定性假设}{4}{section.2.2}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{2.3}}\hspace {-2pt}观察环境理想化假设}{4}{section.2.3}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{2.4}}\hspace {-2pt}伽马响应模型假设}{4}{section.2.4}%
-\contentsline {section}{\numberline {\raisebox {0.0mm}{2.5}}\hspace {-2pt}数据代表性假设}{5}{section.2.5}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.4}}\hspace {-2pt}多通道颜色系统假设}{4}{section.2.4}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.5}}\hspace {-2pt}颜色转换映射假设}{5}{section.2.5}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.6}}\hspace {-2pt}损失函数与感知一致性假设}{5}{section.2.6}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.7}}\hspace {-2pt}伽马响应模型假设}{5}{section.2.7}%
+\contentsline {section}{\numberline {\raisebox {0.0mm}{2.8}}\hspace {-2pt}数据代表性假设}{5}{section.2.8}%
 \contentsline {chapter}{\numberline {\raisebox {0.0mm}{3}}\hspace {0pt}理论基础}{6}{chapter.3}%
 \contentsline {section}{\numberline {\raisebox {0.0mm}{3.1}}\hspace {-2pt}颜色空间理论}{6}{section.3.1}%
 \contentsline {subsection}{\numberline {\raisebox {0.0mm}{3.1.1}}\hspace {-2pt}CIE1931标准色度观察者与XYZ颜色空间}{6}{subsection.3.1.1}%
