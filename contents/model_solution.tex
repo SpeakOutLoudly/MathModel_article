@@ -6,40 +6,30 @@
 
 \subsection[\hspace{-2pt}模型建立与求解]{{\heiti\zihao{4} \hspace{-8pt}模型建立与求解}}\label{section3: 模型建立与求解}
 
-为求解 BT.2020 空间到显示屏 RGB 空间的最优线性映射矩阵 $M\in \mathbf{R}^{3\times 3}$ ，我们采样一组代表性 BT.2020 RGB 样本 $\{c_{i}\}_{i=1}^{N}\in [0,1]^{3}$ ，其色彩向量经过如下映射：
-\begin{equation}
-\begin{aligned}
-  &c^{'}_{i} = M\cdot C_{i}
-\end{aligned}
+为求解 BT.2020 空间到显示屏 RGB 空间的最优线性映射矩阵 $M\in \mathbf{R}^{3\times 3}$，我们采样一组代表性 BT.2020 RGB 样本 $\{c_{i}\}_{i=1}^{N}\in [0,1]^{3}$，其色彩向量经过如下映射：
+\begin{equation}\label{eq:linear_map}
+  c^{'}_{i} = M\,c_{i}
 \end{equation}
-然后分别映射至CIELab空间，并计算感知误差：
-\begin{equation}
-\begin{aligned}
- &L(M)=\frac{1}{N}\sum_{i=1}^{N}\Delta E_{00}(Lab(M_{BT\rightarrow XYZ} \cdot c_{i}), Lab(M_{DP\rightarrow XYZ}\cdot (M\cdot c_{i})))
-\end{aligned}
+然后通过预定义的色彩转换矩阵 $M_{BT\rightarrow XYZ}$ 与 $M_{DP\rightarrow XYZ}$ 将源与目标向量映射至 XYZ 空间，并进一步转换至 CIELab 空间，计算感知误差 $\Delta E_{00}$：
+\begin{equation}\label{eq:deltaE}
+  L(M)=\frac{1}{N}\sum_{i=1}^{N}\Delta E_{00}\bigl(\mathrm{Lab}(M_{BT\rightarrow XYZ}\,c_{i}),\;\mathrm{Lab}(M_{DP\rightarrow XYZ}\,M\,c_{i})\bigr).
 \end{equation}
+
 优化目标为：
-\begin{equation}
-\begin{aligned}
-  &\underset {M\in \mathbb{R}^{3\times 3}}{min}L(M)
-\end{aligned}
+\begin{equation}\label{eq:opt_obj}
+  \underset {M\in \mathbb{R}^{3\times 3}}{\min}\;L(M).
 \end{equation}
 
-为求解上述非线性、不可导且可能存在多个局部极小值的优化问题，我们引入差分进化（Differential Evolution, DE）算法。DE 是一种基于种群的全局优化方法，具有较强的鲁棒性与跳出局部最优的能力。
+为求解上述非线性、不可导且可能存在多个局部极小值的优化问题，我们引入差分进化 (Differential Evolution, DE) 算法。DE 算法以种群为基础，通过变异、交叉和选择操作迭代更新种群，逐步逼近最优解。
 
-\noindent\textbf{（1）差分进化算法设计}
-
-\circled{1} \textbf{参数编码与搜索空间}
-
+\noindent\textbf{（1）参数编码与搜索空间}
 将 $M\in \mathbb(R^{3\times 3})$ 展开为9维向量 $\mathbf{x}\in \mathbb{R^{9}}$ ，并定义搜索空间边界为：
 \begin{equation}
 \begin{aligned}
   &x_{j}\in [-2,2]m\ \ j=1,...,9
 \end{aligned}
 \end{equation}
-
-\circled{2} \textbf{种群初始化}
-
+\noindent\textbf{（2）初始化种群}
 生成 $NP$ 个个体 $\mathbf{x}_{i}^{(0)}\in \mathbb{R^{9}}$：
 \begin{equation}
 \begin{aligned}
@@ -47,42 +37,54 @@
 \end{aligned}
 \end{equation}
 
-\circled{3} \textbf{变异操作}
-
+\noindent\textbf{（3）变异操作}
 对第 $i$ 个个体，在不同个体中随机选择 $\mathbf{x}_{r1},\mathbf{x_{r2}},\mathbf{x_{r3}}$ ，构造差分向量：
 \begin{equation}
 \begin{aligned}
   &\mathbf{v_{i}}=\mathbf{x_{r1}}+F\cdot (\mathbf{x_{r2}}-\mathbf{x_{r3}})
 \end{aligned}
 \end{equation}
-其中 $F\in (0,2)$ 是差分缩放因子，控制探索强度。
+其中 $F\in (0,2)$ 为差分缩放因子。
 
-\circled{4} \textbf{交叉操作}
-
+\noindent\textbf{（4）交叉操作}
 构造试验个体 $\mathbf{u_{i}}$：
 \begin{equation}
 \begin{aligned}
   &u_{i,j}=
   \begin{cases}
-    v_{i,j},\ \ \ rand_{j}<CR\ or\ j=j_{rand}\\
-    x_{i,j}^{t},\ \ \ otherwise
+    v_{i,j}^{(t)},&\text{if } \mathrm{rand}_j\le CR\text{ or } j=j_{rand},\\
+    x_{i,j}^{(t)},&\text{otherwise},
   \end{cases}
 \end{aligned}
 \end{equation}
-其中 $CR\in [0,1]$ 为交叉概率，$j_{rand}$ 确保至少一维来自 $\mathbf{v_{i}}$。
+其中 $\mathrm{rand}_j\sim\mathcal{U}(0,1)$ 且 $j_{rand}$ 确保至少一维来自 $\mathbf{v}_i^{(t)}$。
 
-\circled{5} \textbf{选择操作}
-
+\noindent\textbf{（5）选择操作}
 通过目标函数比较试验解与当前个体，选择保留更优者：
 \begin{equation}
 \begin{aligned}
   &\mathbf{x}_{i}^{t+1}=
   \begin{cases}
-    \mathbf{u}_{i},\ \ \ L(\mathbf{u_{i}})<L(\mathbf{x^{(t)}_{i}})\\
-    \mathbf{x}_{i}^{(t)},\ \ \ otherwise
+    \mathbf{u}_i^{(t)},&\text{if } L\bigl(\mathrm{mat}(\mathbf{u}_i^{(t)})\bigr)<L\bigl(\mathrm{mat}(\mathbf{x}_i^{(t)})\bigr),\\
+    \mathbf{x}_i^{(t)},&\text{otherwise}.
   \end{cases}
 \end{aligned}
 \end{equation}
+
+其中，$L(\mathrm{mat}(\mathbf{x}))$ 由式(\ref{eq:deltaE}) 计算。
+
+\noindent\textbf{（6）终止条件}\
+满足以下任一条件则终止迭代：
+\begin{itemize}
+  \item 最大迭代代数 $T_{max}$；
+  \item 种群最优个体的目标函数值变化小于阈值 $\epsilon$。
+\end{itemize}
+
+最终输出最优映射矩阵 $M^*=\mathrm{mat}(\mathbf{x}_{best})$，其中
+\begin{equation}\label{eq:best_solution}
+  \mathbf{x}_{best} = \arg\min_{i=1,\dots,NP} L\bigl(\mathrm{mat}(\mathbf{x}_i^{(T)})\bigr).
+\end{equation}
+
 
 综上所述，为优化色彩转换矩阵 $M$，本文选用差分进化算法（DE）。该方法将 $M$ 参数化为9维向量，并在预设的搜索空间边界内进行优化。通过其经典的种群初始化、变异、交叉及选择等核心操作，DE算法能够迭代地搜寻旨在最小化以 $\Delta E_{00}$ 度量的感知色彩差异的解。鉴于目标函数的非线性、不可导以及可能存在多个局部极小值的特性，DE算法的全局优化能力和鲁棒性，使其成为获取高质量色彩映射的有效计算途径。
 

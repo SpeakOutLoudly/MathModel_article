@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.14)  29 MAY 2025 19:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.17)  29 MAY 2025 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1608,6 +1608,18 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;mapping=tex-text;"
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+(d:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+ (d:/Latex/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55.
+ (d:/Latex/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 (Font)              using `TU/SimHei(0)/m/n' instead on input line 55.
@@ -1654,18 +1666,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
- (c:/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1826,6 +1826,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 35.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 41.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1843,7 +1847,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 43.
+(hyperref)                removing `\@ifnextchar' on input line 47.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 61.
 
 )
 
@@ -2004,13 +2016,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 89.
-
-File: figures/DE2000.png Graphic file (type bmp)
-<figures/DE2000.png>
-Package hyperref Info: bookmark level for unknown figuresEN defaults to 0 on input line 105.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(hyperref)                removing `\@ifnextchar' on input line 91.
 
 
 
@@ -2022,8 +2028,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [12]
+File: figures/DE2000.png Graphic file (type bmp)
+<figures/DE2000.png>
+Package hyperref Info: bookmark level for unknown figuresEN defaults to 0 on input line 107.
 File: figures/面积Loss.png Graphic file (type bmp)
 <figures/面积Loss.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/色度.png Graphic file (type bmp)
+<figures/色度.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 141.
+
 
 
 
@@ -2034,18 +2060,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [13]
-File: figures/色度.png Graphic file (type bmp)
-<figures/色度.png>
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 139.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2057,11 +2071,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 153.
+(hyperref)                removing `\@ifnextchar' on input line 155.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 169.
+(hyperref)                removing `\@ifnextchar' on input line 171.
 
 
 
@@ -2073,13 +2087,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [15]
-Overfull \hbox (0.22803pt too wide) in paragraph at lines 179--180
+Overfull \hbox (0.22803pt too wide) in paragraph at lines 181--182
 []\TU/simsun.ttf(0)/b/n/12.045 感 知 误 差 损 失 \TU/TeXGyreTermesX(0)/b/n/12.045 ($\OT1/cmr/m/n/12.045 ^^A\OML/cmm/m/it/12.045 E[]$\TU/TeXGyreTermesX(0)/b/n/12.045 ) \TU/simsun.ttf(0)/m/n/12.045 定 义 为 $\OML/cmm/m/it/12.045 L[] \OT1/cmr/m/n/12.045 = [] [][] ^^A\OML/cmm/m/it/12.045 E[]\OT1/cmr/m/n/12.045 ([][]\OML/cmm/m/it/12.045 ; [][]\OT1/cmr/m/n/12.045 )$\TU/simsun.ttf(0)/m/n/12.045 ，|
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 187.
+(hyperref)                removing `\@ifnextchar' on input line 189.
 
 
 
@@ -2093,7 +2107,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 218.
+(hyperref)                removing `\@ifnextchar' on input line 220.
 
 File: figures/Training_Loss_Curve.png Graphic file (type bmp)
 <figures/Training_Loss_Curve.png>
@@ -2147,7 +2161,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 286.
+(hyperref)                removing `\@ifnextchar' on input line 288.
 
 
 
@@ -2161,14 +2175,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 290.
+(hyperref)                removing `\@ifnextchar' on input line 292.
 
 
-Overfull \hbox (0.6177pt too wide) in paragraph at lines 314--315
+Overfull \hbox (0.6177pt too wide) in paragraph at lines 316--317
 []\TU/simsun.ttf(0)/m/n/12.045 基 于 第[][][]章 中 建 立 的 伽 马 校 正 理 论  |（见 第[][][]节） ，|  对 每 个 颜 色 通 道 $\OML/cmm/m/it/12.045 c \U/cmsy/m/n/12.045 2 f\OML/cmm/m/it/12.045 R; G; B\U/cmsy/m/n/12.045 g$\TU/simsun.ttf(0)/m/n/12.045 ，|
  []
 
-Package hyperref Info: bookmark level for unknown tablesEN defaults to 0 on input line 327.
+Package hyperref Info: bookmark level for unknown tablesEN defaults to 0 on input line 329.
 
 
 
@@ -2180,20 +2194,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22]
 
-LaTeX Warning: Reference `section2: CIEDE2000色差公式' on page 23 undefined on input line 355.
+LaTeX Warning: Reference `section2: CIEDE2000色差公式' on page 23 undefined on input line 357.
 
 
-LaTeX Warning: Reference `section2: CIELab颜色空间' on page 23 undefined on input line 359.
+LaTeX Warning: Reference `section2: CIELab颜色空间' on page 23 undefined on input line 361.
 
 
-LaTeX Warning: Reference `section2: CIEXYZ颜色空间' on page 23 undefined on input line 379.
+LaTeX Warning: Reference `section2: CIEXYZ颜色空间' on page 23 undefined on input line 381.
 
 
-LaTeX Warning: Reference `section2: CIELab颜色空间' on page 23 undefined on input line 379.
+LaTeX Warning: Reference `section2: CIELab颜色空间' on page 23 undefined on input line 381.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 381.
+(hyperref)                removing `\@ifnextchar' on input line 383.
 
 
 
@@ -2216,7 +2230,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 460.
+(hyperref)                removing `\@ifnextchar' on input line 462.
 
 File: figures/model_solution/p3/R.pdf Graphic file (type pdf)
 <use figures/model_solution/p3/R.pdf>
@@ -2318,7 +2332,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[31] (./main.bbl)
+[31] (./main.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 14.
+
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2685,14 +2703,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5F0EFF6882E878866509E4FB2267FDDD;7668.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B51CDD99EF29EC23785D47A6D9B919B9;6934
+(rerunfilecheck)             After:  5F0EFF6882E878866509E4FB2267FDDD;7668.
  ) 
 Here is how much of TeX's memory you used:
- 44836 strings out of 473832
- 977883 string characters out of 5733158
- 1961936 words of memory out of 5000000
- 66969 multiletter control sequences out of 15000+600000
+ 44835 strings out of 473832
+ 977872 string characters out of 5733158
+ 1961667 words of memory out of 5000000
+ 66968 multiletter control sequences out of 15000+600000
  578762 words of font info for 192 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  107i,17n,131p,1447b,2608s stack positions out of 10000i,1000n,20000p,200000b,200000s
