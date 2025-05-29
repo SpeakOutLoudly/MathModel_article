@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -75,6 +75,11 @@ Storn R, Price K.
 Price K, Storn R~M, Lampinen J~A.
 \newblock Differential evolution: a handbook for global permutation-based combinatorial optimization\allowbreak[J].
 \newblock Springer Science \& Business Media, 2013.
+
+\bibitem[王广志(2024)]{1024493909.nh}
+王广志.
+\newblock 基于ColorNet架构的比色传感器阵列用于猪肉新鲜度检测\allowbreak[D].
+\newblock 东北电力大学, 2024.
 
 \bibitem[黄敏\ 等(2006)黄敏, 刘浩学, 徐艳芳, 廖宁放, and 罗永道]{BZGC200606058}
 黄敏, 刘浩学, 徐艳芳, 等.

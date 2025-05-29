@@ -10,7 +10,7 @@
 \begin{equation}\label{eq:linear_map}
   c^{'}_{i} = M\,c_{i}
 \end{equation}
-然后通过预定义的色彩转换矩阵 $M_{BT\rightarrow XYZ}$ 与 $M_{DP\rightarrow XYZ}$ 将源与目标向量映射至 XYZ 空间，并进一步转换至 CIELab 空间，计算感知误差 $\Delta E_{00}$\cite{luo2001development,sharma2005ciede2000}：
+然后通过预定义的色彩转换矩阵 $M_{BT\rightarrow XYZ}$ 与 $M_{DP\rightarrow XYZ}$ 将源与目标向量映射至 XYZ 空间，并进一步转换至 CIELab 空间，计算感知误差 $\Delta E_{00}$\cite{luo2001development}：
 \begin{equation}\label{eq:deltaE}
   L(M)=\frac{1}{N}\sum_{i=1}^{N}\Delta E_{00}\bigl(\mathrm{Lab}(M_{BT\rightarrow XYZ}\,c_{i}),\;\mathrm{Lab}(M_{DP\rightarrow XYZ}\,M\,c_{i})\bigr).
 \end{equation}
