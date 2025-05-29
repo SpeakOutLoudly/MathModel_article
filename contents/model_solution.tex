@@ -55,6 +55,7 @@
     v_{i,j}^{(t)},&\text{if } \mathrm{rand}_j\le CR\text{ or } j=j_{rand},\\
     x_{i,j}^{(t)},&\text{otherwise},
   \end{cases}
+\end{aligned}
 \end{equation}
 其中 $\mathrm{rand}_j\sim\mathcal{U}(0,1)$ 且 $j_{rand}$ 确保至少一维来自 $\mathbf{v}_i^{(t)}$。
 
@@ -67,6 +68,7 @@
     \mathbf{u}_i^{(t)},&\text{if } L\bigl(\mathrm{mat}(\mathbf{u}_i^{(t)})\bigr)<L\bigl(\mathrm{mat}(\mathbf{x}_i^{(t)})\bigr),\\
     \mathbf{x}_i^{(t)},&\text{otherwise}.
   \end{cases}
+\end{aligned}
 \end{equation}
 
 其中，$L(\mathrm{mat}(\mathbf{x}))$ 由式(\ref{eq:deltaE}) 计算。
