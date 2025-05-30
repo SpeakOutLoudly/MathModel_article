@@ -21,10 +21,9 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref/refs.bib
-Warning--I didn't find a database entry for "loshchilov2017decoupled"
 You've used 8 entries,
             5375 wiz_defined-function locations,
-            1108 strings with 9410 characters,
+            1107 strings with 9387 characters,
 and the built_in function-call counts, 50897 in all, are:
 = -- 1051
 > -- 5643
@@ -63,4 +62,3 @@ warning$ -- 0
 while$ -- 160
 width$ -- 0
 write$ -- 123
-(There was 1 warning)
